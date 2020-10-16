@@ -3,15 +3,19 @@
 
 int main()
 {
-    int a,x;
-    printf("tell me the limit\n");
-    scanf("%d",&x);
-    for(a=x;a>0;a=a-1){
-            for(int b=1;b<a;b=b+1){
-                printf("%d",a);
-            }
-        printf("%d\n",a);
+    int a;
+    a=7;
+    while(a>0){
+        int b;
+        b=1;
+        while(b<a){
+            printf("%d",a);
+            b++;
+        }
+       printf("%d\n",a);
+       a=a-1;
     }
+
 
     return 0;
 }
